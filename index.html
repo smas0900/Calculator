@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" type="module" defer></script>
+    <link rel="stylesheet" href="./style.css" class="rel">
+  </head>
+  <body>
+    <section class="calc">
+      <form id="calculator" action="#">
+        <div class="row">
+          <input
+            class="equation"
+            type="text"
+            id="equation"
+            autocomplete="off"
+          />
+        </div>
+        <div class="row">
+          <p class="display" id="display"></p>
+        </div>
+        <div class="row">
+          <input class="clear" id="del" type="button" value="C" />
+          <input class="oper" id="paren-open" type="button" value="(" />
+          <input class="oper" id="paren-close" type="button" value=")" />
+          <input class="oper" id="exp" type="button" value="^" />
+          <input class="clear" id="clr" type="button" value="clr" />
+          <input class="const" id="pi" type="button" value="pi" />
+        </div>
+        <div class="row">
+          <input class="num" id="seven" type="button" value="7" />
+          <input class="num" id="eight" type="button" value="8" />
+          <input class="num" id="nine" type="button" value="9" />
+          <input class="oper" id="multiply" type="button" value="*" />
+          <input class="func" id="sqrt" type="button" value="sqrt" />
+          <input class="const" id="e" type="button" value="e" />
+        </div>
+        <div class="row">
+          <input class="num" id="four" type="button" value="4" />
+          <input class="num" id="five" type="button" value="5" />
+          <input class="num" id="six" type="button" value="6" />
+          <input class="oper" id="divide" type="button" value="/" />
+          <input class="func" id="sin" type="button" value="sin" />
+        </div>
+        <div class="row">
+          <input class="num" id="one" type="button" value="1" />
+          <input class="num" id="two" type="button" value="2" />
+          <input class="num" id="three" type="button" value="3" />
+          <input class="oper" id="plus" type="button" value="+" />
+          <input class="func" id="cos" type="button" value="cos" />
+        </div>
+        <div class="row">
+          <input class="oper" id="decimal" type="button" value="." />
+          <input class="num" id="zero" type="button" value="0" />
+          <input class="submit" id="equals" type="submit" value="=" />
+          <input class="oper" id="minus" type="button" value="-" />
+          <input class="func" id="tan" type="button" value="tan" />
+        </div>
+      </form>
+      <hr />
+      <form id="set-var" action="#">
+        <div class="row">
+          <label for="var-name">Name of Variable</label>
+          <input
+            type="text"
+            name="var-name"
+            id="var-name"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="row">
+          <label for="var-val">Value of Variable</label>
+          <input
+            type="text"
+            name="var-val"
+            id="var-val"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div class="row">
+          <input type="submit" value="Add Variable" id="var-add" />
+        </div>
+        <div class="row" id="var-l">
+          <div id="err"></div>
+          <div id="var-list"></div>
+        </div>
+      </form>
+    </section>
+    <hr />
+    <section class="hist" id="history"></section>
+  </body>
+</html>
